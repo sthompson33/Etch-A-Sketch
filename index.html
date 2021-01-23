@@ -6,22 +6,28 @@
         <title>Etch A Sketch</title>
     </head>
     <body>
-        <main class="main-container">
-            <div class="controls">
+        <main id="main-container">
+            <div id="controls">
+                <div id="range">
+                    <label id="size-label" for="size-range">
+                        <input type="range" id="size-range" min="16" max="100" defaultvalue="16">16
+                    </label>
+                    <button>Choose Size</button>
+                </div>
                 <button>Black</button>
                 <button>Random</button>
-                <button>Shade</button>
+                <button>Add Shade</button>
                 <button>Clear</button>
-                <input type="color">
             </div>
-            <div class="tablet">
+            <div id="tablet">
                 <h2>Etch A Sketch</h2>
-                <div class="screen"></div>
-                <div class="dials">
+                <div id="screen"></div>
+                <div id="dials">
                     <div id="left-dial"></div>
                     <div id="right-dial"></div>
                 </div>
             </div>
+            
         </main>
         <script src="script.js"></script>
     </body>

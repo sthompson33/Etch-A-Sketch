@@ -31,12 +31,16 @@ html {
     background-color: rgba(255, 255, 255, .75);
     border-radius: 10px;
     width: 300px;
-    height: 450px;
+    height: 350px;
 }
 
 #range {
     display: flex;
     flex-direction: column;
+}
+
+#size-label {
+    font-size: 18px;
 }
 
 button {
@@ -80,6 +84,10 @@ button:hover, button:focus {
     background-color: white;
 }
 
+.cell {
+    border: 1px solid rgb(240, 240, 240);
+}
+
 #size-range {
     width: 125px;
 }
@@ -111,5 +119,21 @@ button:hover, button:focus {
     to {
         transform: rotate(359deg);
     }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+}
+
+footer p, footer a {
+    padding-right: 20px;
 }
 

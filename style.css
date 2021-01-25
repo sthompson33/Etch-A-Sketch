@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -13,6 +14,7 @@ html {
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
+   font-family: 'Fjalla One', sans-serif;
 }
 
 #main-container {
@@ -40,7 +42,7 @@ html {
 }
 
 #size-label {
-    font-size: 18px;
+   font-size: 20px;
 }
 
 button {
@@ -85,7 +87,8 @@ button:hover, button:focus {
 }
 
 .cell {
-    border: 1px solid rgb(240, 240, 240);
+    border: 1px solid rgb(225, 225, 225);
+    background-color: white;
 }
 
 #size-range {

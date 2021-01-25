@@ -42,10 +42,8 @@ eraseBtn.addEventListener('click', () => {
 const clearBtn = document.getElementById("clearBtn");
 clearBtn.addEventListener('click', () => {
     clearBtn.blur();
-    let cells = document.querySelectorAll(".cell");
-    for(let i = cells.length - 1; i >= 0; i--) {
-        cells[i].style.backgroundColor = "white";
-    }
+    deleteGrid();
+    createGrid(slider.value);
 });
 
 function createGrid(size) {

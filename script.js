@@ -1,7 +1,21 @@
-const screen = document.getElementById("screen");
 const slider = document.getElementById("slider");
 const sizeLabel = document.getElementById("size-label");
+
 let grid = document.getElementById("screen");
+
+/*animation for dials*/ 
+let oldx = 0;
+let oldy = 0;
+const leftDial = document.getElementById("left-dial");
+const rightDial = document.getElementById("right-dial");
+grid.addEventListener('mousemove', (e) => {
+    if(e.pageX != oldx) {
+        leftDial.classList.toggle("rotate");
+    } else {
+        rightDial.classList.toggle("rotate");
+    }
+    oldx = e.pageX;
+});
 
 createGrid(slider.min);
 
@@ -33,6 +47,11 @@ function randomColor() {
     return `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 
     ${Math.floor(Math.random() * 255)})`;
 }
+
+const colorPicker = document.getElementById("colorPicker");
+colorPicker.addEventListener('mouseleave', () =>{
+    changeColor(colorPicker.value);
+});
 
 const eraseBtn = document.getElementById("eraseBtn");
 eraseBtn.addEventListener('click', () => {

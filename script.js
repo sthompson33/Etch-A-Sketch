@@ -49,7 +49,7 @@ function randomColor() {
 }
 
 const colorPicker = document.getElementById("colorPicker");
-colorPicker.addEventListener('mouseleave', () =>{
+colorPicker.addEventListener('mouseleave', () => {
     changeColor(colorPicker.value);
 });
 
